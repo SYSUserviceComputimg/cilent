@@ -1,3 +1,15 @@
+### 前端部分搭建
+
+使用 [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
+
+进度记录 ：未完成
+
+12.05 完成脚手架
+
+12.09 完成登录页面（登录失败提示还未写）
+
+总体还未完成
+
 # Cilent
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
