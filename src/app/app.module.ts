@@ -3,16 +3,37 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SigninComponent } from './signin/signin.component';
+import { SignupComponent } from './signup/signup.component';
+import { IconsProviderModule } from './icons-provider.module';
+import { NgZorroAntdModule, NZ_I18N, zh_CN } from 'ng-zorro-antd';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { registerLocaleData } from '@angular/common';
+import zh from '@angular/common/locales/zh';
+
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+   declarations: [
+      AppComponent,
+
+      SigninComponent,
+      SignupComponent
+   ],
+   imports: [
+      BrowserModule,
+      AppRoutingModule,
+      IconsProviderModule,
+      NgZorroAntdModule,
+      FormsModule,
+      HttpClientModule,
+      BrowserAnimationsModule,
+      ReactiveFormsModule
+   ],
+   providers: [{ provide: NZ_I18N, useValue: zh_CN }],
+   bootstrap: [
+      AppComponent
+   ]
 })
 export class AppModule { }
